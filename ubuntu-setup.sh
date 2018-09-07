@@ -38,6 +38,10 @@ sudo gdebi google-chrome-stable_current_amd64.deb --n &>> results.txt
 echo " [x] Installing Spotify"
 snap install spotify --no-wait &>> results.txt
 
+# Application dock setup
+echo " [x] Setting up dock favorites"
+dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'org.gnome.Terminal.desktop', 'gnome-control-center.desktop', 'spotify_spotify.desktop', 'vlc.desktop']"
+
 # Removing temp directory
 echo " [x] Removing directory \"~/Downloads/temp\""
 rm -rf temp &>> results.txt
