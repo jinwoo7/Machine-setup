@@ -14,7 +14,7 @@ sudo apt upgrade -y &>> ~/Downloads/results.txt
 
 # Packages
 echo " [x] Installing pakages"
-sudo apt install vim gdebi-core vlc snap cscope emacs gdb git gcc htop kernel-devel python-devel python3 readline-devel tig tmux net-tools wget netcat -y &>> ~/Downloads/results.txt
+sudo apt install vim gdebi-core vlc snap cscope emacs gdb git gcc htop python3 tig tmux net-tools wget netcat build-essential -y &>> ~/Downloads/results.txt
 
 # Install - Chrome
 echo " [x] Installing Chrome"
