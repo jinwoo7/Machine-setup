@@ -16,6 +16,12 @@ sudo apt install vim gdebi-core vlc snap cscope emacs gdb git gcc htop python3 t
 echo " [x] Getting vim settings"
 cp configs/.vimrc ~/.vimrc &>> results.txt
 
+# Setting up ssh keys
+echo " [x] Setting up ssh keys - TODO"
+
+
+
+
 # Creating temp directory
 echo " [x] Creating and moving to directory \"temp\""
 rm -rf temp &>> results.txt
